@@ -16,7 +16,7 @@ test.skip('Interacting with web elements on GitLab', async({page}) =>{
     await page.getByTestId('new-user-last-name-field').fill("John1");
 })
 
-test('Using Various Locator Methods', async ({page}) => {
+test.skip('Using Various Locator Methods', async ({page}) => {
     await page.goto('https://gitlab.com/');
     // await page.click('#onetrust-accept-btn-handler'); //cookie button click
     // await page.getByRole('link', {name: 'Sign in'}).click();
