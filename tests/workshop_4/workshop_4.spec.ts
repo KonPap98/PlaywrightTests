@@ -25,7 +25,7 @@ test.skip('Confirm Alert', async({page}) => {
     expect(allertMessage).toBe('You clicked Cancel.');
 })
 
-test.only('Handling POP_UPs', async({page}) => {
+test.skip('Handling POP_UPs', async({page}) => {
     await page.goto('file:///C://Users//WarMi//Desktop//Playwright-Tests//tests//workshop_4//index.html');
     const [popup] = await Promise.all([
         page.waitForEvent('popup'),
